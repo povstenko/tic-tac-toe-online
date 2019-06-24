@@ -139,10 +139,10 @@ namespace TicTacToe
             this.lbScoreDraw = new System.Windows.Forms.Label();
             this.lbMaches = new System.Windows.Forms.Label();
             this.gbScore = new System.Windows.Forms.GroupBox();
-            this.ilBolaXis = new System.Windows.Forms.ImageList(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ilBolaXis = new System.Windows.Forms.ImageList(this.components);
             this.picWinner = new System.Windows.Forms.PictureBox();
             this.pic33 = new System.Windows.Forms.PictureBox();
             this.pic32 = new System.Windows.Forms.PictureBox();
@@ -379,7 +379,7 @@ namespace TicTacToe
             // 
             // stbMessage
             // 
-            this.stbMessage.Location = new System.Drawing.Point(0, 301);
+            this.stbMessage.Location = new System.Drawing.Point(0, 336);
             this.stbMessage.Name = "stbMessage";
             this.stbMessage.ShowPanels = true;
             this.stbMessage.Size = new System.Drawing.Size(287, 22);
@@ -447,13 +447,6 @@ namespace TicTacToe
             this.gbScore.TabIndex = 23;
             this.gbScore.TabStop = false;
             // 
-            // ilBolaXis
-            // 
-            this.ilBolaXis.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilBolaXis.ImageStream")));
-            this.ilBolaXis.TransparentColor = System.Drawing.Color.Transparent;
-            this.ilBolaXis.Images.SetKeyName(0, "Cross.gif");
-            this.ilBolaXis.Images.SetKeyName(1, "Circle.gif");
-            // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::TicTacToe.Properties.Resources.Draw;
@@ -485,6 +478,13 @@ namespace TicTacToe
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // ilBolaXis
+            // 
+            this.ilBolaXis.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilBolaXis.ImageStream")));
+            this.ilBolaXis.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilBolaXis.Images.SetKeyName(0, "Cross.gif");
+            this.ilBolaXis.Images.SetKeyName(1, "Circle.gif");
             // 
             // picWinner
             // 
@@ -581,7 +581,7 @@ namespace TicTacToe
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(287, 323);
+            this.ClientSize = new System.Drawing.Size(287, 358);
             this.Controls.Add(this.gbScore);
             this.Controls.Add(this.stbMessage);
             this.Controls.Add(this.picWinner);
