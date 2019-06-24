@@ -50,9 +50,6 @@ namespace TicTacToe
 		private System.Windows.Forms.MenuItem mnControles;
 		private System.Windows.Forms.MenuItem mnDifficultAverage;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Label lbScoreBall;
 		private System.Windows.Forms.Label lbScoreCross;
 		private System.Windows.Forms.Label lbScoreDraw;
@@ -63,7 +60,10 @@ namespace TicTacToe
 		private System.Windows.Forms.MenuItem mnDisconnect;
 		private System.Windows.Forms.ImageList ilBolaXis;
 		private System.Windows.Forms.GroupBox gbScore;
-		private System.ComponentModel.IContainer components;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private System.ComponentModel.IContainer components;
 
 		public frmTicTacToe()
 		{
@@ -101,490 +101,529 @@ namespace TicTacToe
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(frmTicTacToe));
-			this.pic11 = new System.Windows.Forms.PictureBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.pic12 = new System.Windows.Forms.PictureBox();
-			this.pic13 = new System.Windows.Forms.PictureBox();
-			this.pic23 = new System.Windows.Forms.PictureBox();
-			this.pic22 = new System.Windows.Forms.PictureBox();
-			this.pic21 = new System.Windows.Forms.PictureBox();
-			this.pic33 = new System.Windows.Forms.PictureBox();
-			this.pic32 = new System.Windows.Forms.PictureBox();
-			this.pic31 = new System.Windows.Forms.PictureBox();
-			this.label2 = new System.Windows.Forms.Label();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.picWinner = new System.Windows.Forms.PictureBox();
-			this.mainMenu1 = new System.Windows.Forms.MainMenu();
-			this.menuItem1 = new System.Windows.Forms.MenuItem();
-			this.mnNew = new System.Windows.Forms.MenuItem();
-			this.menuItem3 = new System.Windows.Forms.MenuItem();
-			this.mnResetScore = new System.Windows.Forms.MenuItem();
-			this.menuItem4 = new System.Windows.Forms.MenuItem();
-			this.mnExit = new System.Windows.Forms.MenuItem();
-			this.menuItem5 = new System.Windows.Forms.MenuItem();
-			this.mnOnePlayer = new System.Windows.Forms.MenuItem();
-			this.mnTwoPlayers = new System.Windows.Forms.MenuItem();
-			this.menuItem2 = new System.Windows.Forms.MenuItem();
-			this.mnCPUX = new System.Windows.Forms.MenuItem();
-			this.mnCPUO = new System.Windows.Forms.MenuItem();
-			this.mnDificuldade = new System.Windows.Forms.MenuItem();
-			this.mnDifficultEasy = new System.Windows.Forms.MenuItem();
-			this.mnDifficultAverage = new System.Windows.Forms.MenuItem();
-			this.mnDifficultHard = new System.Windows.Forms.MenuItem();
-			this.mnControles = new System.Windows.Forms.MenuItem();
-			this.mnBallRight = new System.Windows.Forms.MenuItem();
-			this.mnBallLeft = new System.Windows.Forms.MenuItem();
-			this.mnRede = new System.Windows.Forms.MenuItem();
-			this.mnStartServer = new System.Windows.Forms.MenuItem();
-			this.mnConnectServer = new System.Windows.Forms.MenuItem();
-			this.menuItem6 = new System.Windows.Forms.MenuItem();
-			this.mnDisconnect = new System.Windows.Forms.MenuItem();
-			this.stbMessage = new System.Windows.Forms.StatusBar();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.lbScoreBall = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.lbScoreCross = new System.Windows.Forms.Label();
-			this.lbScoreDraw = new System.Windows.Forms.Label();
-			this.label11 = new System.Windows.Forms.Label();
-			this.lbMaches = new System.Windows.Forms.Label();
-			this.gbScore = new System.Windows.Forms.GroupBox();
-			this.ilBolaXis = new System.Windows.Forms.ImageList(this.components);
-			this.gbScore.SuspendLayout();
-			this.SuspendLayout();
-			// 
-			// pic11
-			// 
-			this.pic11.Location = new System.Drawing.Point(34, 27);
-			this.pic11.Name = "pic11";
-			this.pic11.Size = new System.Drawing.Size(62, 56);
-			this.pic11.TabIndex = 0;
-			this.pic11.TabStop = false;
-			this.pic11.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// label1
-			// 
-			this.label1.BackColor = System.Drawing.Color.Black;
-			this.label1.Location = new System.Drawing.Point(98, 25);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(8, 212);
-			this.label1.TabIndex = 1;
-			// 
-			// pic12
-			// 
-			this.pic12.Location = new System.Drawing.Point(109, 27);
-			this.pic12.Name = "pic12";
-			this.pic12.Size = new System.Drawing.Size(62, 56);
-			this.pic12.TabIndex = 2;
-			this.pic12.TabStop = false;
-			this.pic12.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic13
-			// 
-			this.pic13.Location = new System.Drawing.Point(187, 27);
-			this.pic13.Name = "pic13";
-			this.pic13.Size = new System.Drawing.Size(62, 56);
-			this.pic13.TabIndex = 3;
-			this.pic13.TabStop = false;
-			this.pic13.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic23
-			// 
-			this.pic23.Location = new System.Drawing.Point(187, 99);
-			this.pic23.Name = "pic23";
-			this.pic23.Size = new System.Drawing.Size(62, 56);
-			this.pic23.TabIndex = 6;
-			this.pic23.TabStop = false;
-			this.pic23.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic22
-			// 
-			this.pic22.Location = new System.Drawing.Point(110, 97);
-			this.pic22.Name = "pic22";
-			this.pic22.Size = new System.Drawing.Size(62, 56);
-			this.pic22.TabIndex = 5;
-			this.pic22.TabStop = false;
-			this.pic22.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic21
-			// 
-			this.pic21.Location = new System.Drawing.Point(34, 98);
-			this.pic21.Name = "pic21";
-			this.pic21.Size = new System.Drawing.Size(62, 56);
-			this.pic21.TabIndex = 4;
-			this.pic21.TabStop = false;
-			this.pic21.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic33
-			// 
-			this.pic33.Location = new System.Drawing.Point(187, 170);
-			this.pic33.Name = "pic33";
-			this.pic33.Size = new System.Drawing.Size(62, 56);
-			this.pic33.TabIndex = 9;
-			this.pic33.TabStop = false;
-			this.pic33.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic32
-			// 
-			this.pic32.Location = new System.Drawing.Point(110, 170);
-			this.pic32.Name = "pic32";
-			this.pic32.Size = new System.Drawing.Size(62, 56);
-			this.pic32.TabIndex = 8;
-			this.pic32.TabStop = false;
-			this.pic32.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// pic31
-			// 
-			this.pic31.Location = new System.Drawing.Point(34, 170);
-			this.pic31.Name = "pic31";
-			this.pic31.Size = new System.Drawing.Size(62, 56);
-			this.pic31.TabIndex = 7;
-			this.pic31.TabStop = false;
-			this.pic31.Click += new System.EventHandler(this.pic1_Click);
-			// 
-			// label2
-			// 
-			this.label2.BackColor = System.Drawing.Color.Black;
-			this.label2.Location = new System.Drawing.Point(175, 25);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(8, 213);
-			this.label2.TabIndex = 10;
-			// 
-			// label3
-			// 
-			this.label3.BackColor = System.Drawing.Color.Black;
-			this.label3.Location = new System.Drawing.Point(21, 85);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(238, 11);
-			this.label3.TabIndex = 11;
-			// 
-			// label4
-			// 
-			this.label4.BackColor = System.Drawing.Color.Black;
-			this.label4.Location = new System.Drawing.Point(22, 155);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(238, 11);
-			this.label4.TabIndex = 12;
-			// 
-			// picWinner
-			// 
-			this.picWinner.Location = new System.Drawing.Point(0, 0);
-			this.picWinner.Name = "picWinner";
-			this.picWinner.Size = new System.Drawing.Size(287, 261);
-			this.picWinner.TabIndex = 13;
-			this.picWinner.TabStop = false;
-			this.picWinner.Visible = false;
-			this.picWinner.Paint += new System.Windows.Forms.PaintEventHandler(this.picWinner_Paint);
-			// 
-			// mainMenu1
-			// 
-			this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.menuItem1,
-																					  this.menuItem5,
-																					  this.mnDificuldade,
-																					  this.mnControles,
-																					  this.mnRede});
-			// 
-			// menuItem1
-			// 
-			this.menuItem1.Index = 0;
-			this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.mnNew,
-																					  this.menuItem3,
-																					  this.mnResetScore,
-																					  this.menuItem4,
-																					  this.mnExit});
-			this.menuItem1.Text = "&Game";
-			// 
-			// mnNew
-			// 
-			this.mnNew.Index = 0;
-			this.mnNew.Shortcut = System.Windows.Forms.Shortcut.F2;
-			this.mnNew.Text = "&New";
-			this.mnNew.Click += new System.EventHandler(this.mnNew_Click);
-			// 
-			// menuItem3
-			// 
-			this.menuItem3.Index = 1;
-			this.menuItem3.Text = "-";
-			// 
-			// mnResetScore
-			// 
-			this.mnResetScore.Index = 2;
-			this.mnResetScore.Text = "&Reset score";
-			this.mnResetScore.Click += new System.EventHandler(this.mnResetScore_Click);
-			// 
-			// menuItem4
-			// 
-			this.menuItem4.Index = 3;
-			this.menuItem4.Text = "-";
-			// 
-			// mnExit
-			// 
-			this.mnExit.Index = 4;
-			this.mnExit.Text = "&Exit";
-			this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
-			// 
-			// menuItem5
-			// 
-			this.menuItem5.Index = 1;
-			this.menuItem5.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																					  this.mnOnePlayer,
-																					  this.mnTwoPlayers,
-																					  this.menuItem2,
-																					  this.mnCPUX,
-																					  this.mnCPUO});
-			this.menuItem5.Text = "&Players";
-			// 
-			// mnOnePlayer
-			// 
-			this.mnOnePlayer.Checked = true;
-			this.mnOnePlayer.Index = 0;
-			this.mnOnePlayer.Text = "&One player";
-			this.mnOnePlayer.Click += new System.EventHandler(this.mnOnePlayer_Click);
-			// 
-			// mnTwoPlayers
-			// 
-			this.mnTwoPlayers.Index = 1;
-			this.mnTwoPlayers.Text = "&Two players";
-			this.mnTwoPlayers.Click += new System.EventHandler(this.mnTwoPlayers_Click);
-			// 
-			// menuItem2
-			// 
-			this.menuItem2.Index = 2;
-			this.menuItem2.Text = "-";
-			// 
-			// mnCPUX
-			// 
-			this.mnCPUX.Checked = true;
-			this.mnCPUX.Index = 3;
-			this.mnCPUX.Text = "CPU - &X";
-			this.mnCPUX.Click += new System.EventHandler(this.mnCPUX_Click);
-			// 
-			// mnCPUO
-			// 
-			this.mnCPUO.Index = 4;
-			this.mnCPUO.Text = "CPU - &O";
-			this.mnCPUO.Click += new System.EventHandler(this.mnCPUO_Click);
-			// 
-			// mnDificuldade
-			// 
-			this.mnDificuldade.Index = 2;
-			this.mnDificuldade.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																						  this.mnDifficultEasy,
-																						  this.mnDifficultAverage,
-																						  this.mnDifficultHard});
-			this.mnDificuldade.Text = "&Difficult";
-			// 
-			// mnDifficultEasy
-			// 
-			this.mnDifficultEasy.Index = 0;
-			this.mnDifficultEasy.Text = "Easy";
-			this.mnDifficultEasy.Click += new System.EventHandler(this.mnDifficultEasy_Click);
-			// 
-			// mnDifficultAverage
-			// 
-			this.mnDifficultAverage.Index = 1;
-			this.mnDifficultAverage.Text = "Average";
-			this.mnDifficultAverage.Click += new System.EventHandler(this.mnDifficultAverage_Click);
-			// 
-			// mnDifficultHard
-			// 
-			this.mnDifficultHard.Checked = true;
-			this.mnDifficultHard.Index = 2;
-			this.mnDifficultHard.Text = "Hard";
-			this.mnDifficultHard.Click += new System.EventHandler(this.mnDifficultHard_Click);
-			// 
-			// mnControles
-			// 
-			this.mnControles.Index = 3;
-			this.mnControles.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																						this.mnBallRight,
-																						this.mnBallLeft});
-			this.mnControles.Text = "&Controls";
-			// 
-			// mnBallRight
-			// 
-			this.mnBallRight.Checked = true;
-			this.mnBallRight.Index = 0;
-			this.mnBallRight.Text = "Ball in the &Right";
-			this.mnBallRight.Click += new System.EventHandler(this.mnBallRight_Click);
-			// 
-			// mnBallLeft
-			// 
-			this.mnBallLeft.Index = 1;
-			this.mnBallLeft.Text = "Ball in the &Left";
-			this.mnBallLeft.Click += new System.EventHandler(this.mnBallLeft_Click);
-			// 
-			// mnRede
-			// 
-			this.mnRede.Index = 4;
-			this.mnRede.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-																				   this.mnStartServer,
-																				   this.mnConnectServer,
-																				   this.menuItem6,
-																				   this.mnDisconnect});
-			this.mnRede.Text = "&Network";
-			// 
-			// mnStartServer
-			// 
-			this.mnStartServer.Index = 0;
-			this.mnStartServer.Text = "Start &server";
-			this.mnStartServer.Click += new System.EventHandler(this.mnStartServer_Click);
-			// 
-			// mnConnectServer
-			// 
-			this.mnConnectServer.Index = 1;
-			this.mnConnectServer.Text = "&Connect to server";
-			this.mnConnectServer.Click += new System.EventHandler(this.mnConnectServer_Click);
-			// 
-			// menuItem6
-			// 
-			this.menuItem6.Index = 2;
-			this.menuItem6.Text = "-";
-			// 
-			// mnDisconnect
-			// 
-			this.mnDisconnect.Enabled = false;
-			this.mnDisconnect.Index = 3;
-			this.mnDisconnect.Text = "&Disconnect";
-			this.mnDisconnect.Click += new System.EventHandler(this.mnDisconnect_Click);
-			// 
-			// stbMessage
-			// 
-			this.stbMessage.Location = new System.Drawing.Point(0, 336);
-			this.stbMessage.Name = "stbMessage";
-			this.stbMessage.ShowPanels = true;
-			this.stbMessage.Size = new System.Drawing.Size(297, 22);
-			this.stbMessage.TabIndex = 14;
-			// 
-			// label5
-			// 
-			this.label5.Location = new System.Drawing.Point(8, 14);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(45, 16);
-			this.label5.TabIndex = 15;
-			this.label5.Text = "Score:";
-			// 
-			// label6
-			// 
-			this.label6.ForeColor = System.Drawing.Color.Blue;
-			this.label6.Location = new System.Drawing.Point(15, 42);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(31, 23);
-			this.label6.TabIndex = 16;
-			this.label6.Text = "Ball:";
-			// 
-			// lbScoreBall
-			// 
-			this.lbScoreBall.ForeColor = System.Drawing.Color.Blue;
-			this.lbScoreBall.Location = new System.Drawing.Point(50, 42);
-			this.lbScoreBall.Name = "lbScoreBall";
-			this.lbScoreBall.Size = new System.Drawing.Size(49, 23);
-			this.lbScoreBall.TabIndex = 17;
-			this.lbScoreBall.Text = "0";
-			// 
-			// label8
-			// 
-			this.label8.ForeColor = System.Drawing.Color.Red;
-			this.label8.Location = new System.Drawing.Point(102, 42);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(38, 23);
-			this.label8.TabIndex = 18;
-			this.label8.Text = "Cross:";
-			// 
-			// lbScoreCross
-			// 
-			this.lbScoreCross.ForeColor = System.Drawing.Color.Red;
-			this.lbScoreCross.Location = new System.Drawing.Point(139, 42);
-			this.lbScoreCross.Name = "lbScoreCross";
-			this.lbScoreCross.Size = new System.Drawing.Size(49, 23);
-			this.lbScoreCross.TabIndex = 19;
-			this.lbScoreCross.Text = "0";
-			// 
-			// lbScoreDraw
-			// 
-			this.lbScoreDraw.ForeColor = System.Drawing.Color.Green;
-			this.lbScoreDraw.Location = new System.Drawing.Point(235, 42);
-			this.lbScoreDraw.Name = "lbScoreDraw";
-			this.lbScoreDraw.Size = new System.Drawing.Size(33, 23);
-			this.lbScoreDraw.TabIndex = 21;
-			this.lbScoreDraw.Text = "0";
-			// 
-			// label11
-			// 
-			this.label11.ForeColor = System.Drawing.Color.Green;
-			this.label11.Location = new System.Drawing.Point(188, 42);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(45, 23);
-			this.label11.TabIndex = 20;
-			this.label11.Text = "Draw:";
-			// 
-			// lbMaches
-			// 
-			this.lbMaches.Location = new System.Drawing.Point(61, 14);
-			this.lbMaches.Name = "lbMaches";
-			this.lbMaches.Size = new System.Drawing.Size(100, 16);
-			this.lbMaches.TabIndex = 22;
-			this.lbMaches.Text = "0 matches";
-			// 
-			// gbScore
-			// 
-			this.gbScore.Controls.Add(this.label8);
-			this.gbScore.Controls.Add(this.lbMaches);
-			this.gbScore.Controls.Add(this.lbScoreCross);
-			this.gbScore.Controls.Add(this.lbScoreDraw);
-			this.gbScore.Controls.Add(this.label11);
-			this.gbScore.Controls.Add(this.label5);
-			this.gbScore.Controls.Add(this.label6);
-			this.gbScore.Controls.Add(this.lbScoreBall);
-			this.gbScore.Location = new System.Drawing.Point(7, 273);
-			this.gbScore.Name = "gbScore";
-			this.gbScore.Size = new System.Drawing.Size(281, 77);
-			this.gbScore.TabIndex = 23;
-			this.gbScore.TabStop = false;
-			// 
-			// ilBolaXis
-			// 
-			this.ilBolaXis.ImageSize = new System.Drawing.Size(62, 56);
-			this.ilBolaXis.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilBolaXis.ImageStream")));
-			this.ilBolaXis.TransparentColor = System.Drawing.Color.Transparent;
-			// 
-			// frmTicTacToe
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(297, 358);
-			this.Controls.Add(this.gbScore);
-			this.Controls.Add(this.stbMessage);
-			this.Controls.Add(this.picWinner);
-			this.Controls.Add(this.label4);
-			this.Controls.Add(this.label3);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.pic33);
-			this.Controls.Add(this.pic32);
-			this.Controls.Add(this.pic31);
-			this.Controls.Add(this.pic23);
-			this.Controls.Add(this.pic22);
-			this.Controls.Add(this.pic21);
-			this.Controls.Add(this.pic13);
-			this.Controls.Add(this.pic12);
-			this.Controls.Add(this.label1);
-			this.Controls.Add(this.pic11);
-			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-			this.KeyPreview = true;
-			this.Menu = this.mainMenu1;
-			this.Name = "frmTicTacToe";
-			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Tic Tac Toe with AI and Network";
-			this.Load += new System.EventHandler(this.Form1_Load);
-			this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmTicTacToe_KeyUp);
-			this.Closed += new System.EventHandler(this.frmTicTacToe_Closed);
-			this.gbScore.ResumeLayout(false);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTicTacToe));
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mainMenu1 = new System.Windows.Forms.MainMenu(this.components);
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.mnNew = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
+            this.mnResetScore = new System.Windows.Forms.MenuItem();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
+            this.mnExit = new System.Windows.Forms.MenuItem();
+            this.menuItem5 = new System.Windows.Forms.MenuItem();
+            this.mnOnePlayer = new System.Windows.Forms.MenuItem();
+            this.mnTwoPlayers = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.mnCPUX = new System.Windows.Forms.MenuItem();
+            this.mnCPUO = new System.Windows.Forms.MenuItem();
+            this.mnDificuldade = new System.Windows.Forms.MenuItem();
+            this.mnDifficultEasy = new System.Windows.Forms.MenuItem();
+            this.mnDifficultAverage = new System.Windows.Forms.MenuItem();
+            this.mnDifficultHard = new System.Windows.Forms.MenuItem();
+            this.mnControles = new System.Windows.Forms.MenuItem();
+            this.mnBallRight = new System.Windows.Forms.MenuItem();
+            this.mnBallLeft = new System.Windows.Forms.MenuItem();
+            this.mnRede = new System.Windows.Forms.MenuItem();
+            this.mnStartServer = new System.Windows.Forms.MenuItem();
+            this.mnConnectServer = new System.Windows.Forms.MenuItem();
+            this.menuItem6 = new System.Windows.Forms.MenuItem();
+            this.mnDisconnect = new System.Windows.Forms.MenuItem();
+            this.stbMessage = new System.Windows.Forms.StatusBar();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbScoreBall = new System.Windows.Forms.Label();
+            this.lbScoreCross = new System.Windows.Forms.Label();
+            this.lbScoreDraw = new System.Windows.Forms.Label();
+            this.lbMaches = new System.Windows.Forms.Label();
+            this.gbScore = new System.Windows.Forms.GroupBox();
+            this.ilBolaXis = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picWinner = new System.Windows.Forms.PictureBox();
+            this.pic33 = new System.Windows.Forms.PictureBox();
+            this.pic32 = new System.Windows.Forms.PictureBox();
+            this.pic31 = new System.Windows.Forms.PictureBox();
+            this.pic23 = new System.Windows.Forms.PictureBox();
+            this.pic22 = new System.Windows.Forms.PictureBox();
+            this.pic21 = new System.Windows.Forms.PictureBox();
+            this.pic13 = new System.Windows.Forms.PictureBox();
+            this.pic12 = new System.Windows.Forms.PictureBox();
+            this.pic11 = new System.Windows.Forms.PictureBox();
+            this.gbScore.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWinner)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic31)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic11)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(98, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(8, 212);
+            this.label1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(175, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(8, 213);
+            this.label2.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(21, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(238, 11);
+            this.label3.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(22, 155);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(238, 11);
+            this.label4.TabIndex = 12;
+            // 
+            // mainMenu1
+            // 
+            this.mainMenu1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem1,
+            this.menuItem5,
+            this.mnDificuldade,
+            this.mnControles,
+            this.mnRede});
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mnNew,
+            this.menuItem3,
+            this.mnResetScore,
+            this.menuItem4,
+            this.mnExit});
+            this.menuItem1.Text = "&Game";
+            // 
+            // mnNew
+            // 
+            this.mnNew.Index = 0;
+            this.mnNew.Shortcut = System.Windows.Forms.Shortcut.F2;
+            this.mnNew.Text = "&New";
+            this.mnNew.Click += new System.EventHandler(this.mnNew_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 1;
+            this.menuItem3.Text = "-";
+            // 
+            // mnResetScore
+            // 
+            this.mnResetScore.Index = 2;
+            this.mnResetScore.Shortcut = System.Windows.Forms.Shortcut.CtrlR;
+            this.mnResetScore.Text = "&Reset score";
+            this.mnResetScore.Click += new System.EventHandler(this.mnResetScore_Click);
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = 3;
+            this.menuItem4.Text = "-";
+            // 
+            // mnExit
+            // 
+            this.mnExit.Index = 4;
+            this.mnExit.Shortcut = System.Windows.Forms.Shortcut.AltBksp;
+            this.mnExit.Text = "&Exit";
+            this.mnExit.Click += new System.EventHandler(this.mnExit_Click);
+            // 
+            // menuItem5
+            // 
+            this.menuItem5.Index = 1;
+            this.menuItem5.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mnOnePlayer,
+            this.mnTwoPlayers,
+            this.menuItem2,
+            this.mnCPUX,
+            this.mnCPUO});
+            this.menuItem5.Text = "&Players";
+            // 
+            // mnOnePlayer
+            // 
+            this.mnOnePlayer.Checked = true;
+            this.mnOnePlayer.Index = 0;
+            this.mnOnePlayer.Text = "&One player";
+            this.mnOnePlayer.Click += new System.EventHandler(this.mnOnePlayer_Click);
+            // 
+            // mnTwoPlayers
+            // 
+            this.mnTwoPlayers.Index = 1;
+            this.mnTwoPlayers.Text = "&Two players";
+            this.mnTwoPlayers.Click += new System.EventHandler(this.mnTwoPlayers_Click);
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 2;
+            this.menuItem2.Text = "-";
+            // 
+            // mnCPUX
+            // 
+            this.mnCPUX.Checked = true;
+            this.mnCPUX.Index = 3;
+            this.mnCPUX.Text = "CPU - &X";
+            this.mnCPUX.Click += new System.EventHandler(this.mnCPUX_Click);
+            // 
+            // mnCPUO
+            // 
+            this.mnCPUO.Index = 4;
+            this.mnCPUO.Text = "CPU - &O";
+            this.mnCPUO.Click += new System.EventHandler(this.mnCPUO_Click);
+            // 
+            // mnDificuldade
+            // 
+            this.mnDificuldade.Index = 2;
+            this.mnDificuldade.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mnDifficultEasy,
+            this.mnDifficultAverage,
+            this.mnDifficultHard});
+            this.mnDificuldade.Text = "&Difficult";
+            // 
+            // mnDifficultEasy
+            // 
+            this.mnDifficultEasy.Index = 0;
+            this.mnDifficultEasy.Text = "Easy";
+            this.mnDifficultEasy.Click += new System.EventHandler(this.mnDifficultEasy_Click);
+            // 
+            // mnDifficultAverage
+            // 
+            this.mnDifficultAverage.Index = 1;
+            this.mnDifficultAverage.Text = "Average";
+            this.mnDifficultAverage.Click += new System.EventHandler(this.mnDifficultAverage_Click);
+            // 
+            // mnDifficultHard
+            // 
+            this.mnDifficultHard.Checked = true;
+            this.mnDifficultHard.Index = 2;
+            this.mnDifficultHard.Text = "Hard";
+            this.mnDifficultHard.Click += new System.EventHandler(this.mnDifficultHard_Click);
+            // 
+            // mnControles
+            // 
+            this.mnControles.Index = 3;
+            this.mnControles.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mnBallRight,
+            this.mnBallLeft});
+            this.mnControles.Text = "&Controls";
+            // 
+            // mnBallRight
+            // 
+            this.mnBallRight.Checked = true;
+            this.mnBallRight.Index = 0;
+            this.mnBallRight.Text = "Ball in the &Right";
+            this.mnBallRight.Click += new System.EventHandler(this.mnBallRight_Click);
+            // 
+            // mnBallLeft
+            // 
+            this.mnBallLeft.Index = 1;
+            this.mnBallLeft.Text = "Ball in the &Left";
+            this.mnBallLeft.Click += new System.EventHandler(this.mnBallLeft_Click);
+            // 
+            // mnRede
+            // 
+            this.mnRede.Index = 4;
+            this.mnRede.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.mnStartServer,
+            this.mnConnectServer,
+            this.menuItem6,
+            this.mnDisconnect});
+            this.mnRede.Text = "&Network";
+            // 
+            // mnStartServer
+            // 
+            this.mnStartServer.Index = 0;
+            this.mnStartServer.Text = "Start &server";
+            this.mnStartServer.Click += new System.EventHandler(this.mnStartServer_Click);
+            // 
+            // mnConnectServer
+            // 
+            this.mnConnectServer.Index = 1;
+            this.mnConnectServer.Text = "&Connect to server";
+            this.mnConnectServer.Click += new System.EventHandler(this.mnConnectServer_Click);
+            // 
+            // menuItem6
+            // 
+            this.menuItem6.Index = 2;
+            this.menuItem6.Text = "-";
+            // 
+            // mnDisconnect
+            // 
+            this.mnDisconnect.Enabled = false;
+            this.mnDisconnect.Index = 3;
+            this.mnDisconnect.Text = "&Disconnect";
+            this.mnDisconnect.Click += new System.EventHandler(this.mnDisconnect_Click);
+            // 
+            // stbMessage
+            // 
+            this.stbMessage.Location = new System.Drawing.Point(0, 301);
+            this.stbMessage.Name = "stbMessage";
+            this.stbMessage.ShowPanels = true;
+            this.stbMessage.Size = new System.Drawing.Size(287, 22);
+            this.stbMessage.SizingGrip = false;
+            this.stbMessage.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(8, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 16);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Score:";
+            // 
+            // lbScoreBall
+            // 
+            this.lbScoreBall.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbScoreBall.ForeColor = System.Drawing.Color.Blue;
+            this.lbScoreBall.Location = new System.Drawing.Point(50, 39);
+            this.lbScoreBall.Name = "lbScoreBall";
+            this.lbScoreBall.Size = new System.Drawing.Size(49, 23);
+            this.lbScoreBall.TabIndex = 17;
+            this.lbScoreBall.Text = "0";
+            // 
+            // lbScoreCross
+            // 
+            this.lbScoreCross.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbScoreCross.ForeColor = System.Drawing.Color.Red;
+            this.lbScoreCross.Location = new System.Drawing.Point(139, 39);
+            this.lbScoreCross.Name = "lbScoreCross";
+            this.lbScoreCross.Size = new System.Drawing.Size(49, 23);
+            this.lbScoreCross.TabIndex = 19;
+            this.lbScoreCross.Text = "0";
+            // 
+            // lbScoreDraw
+            // 
+            this.lbScoreDraw.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbScoreDraw.Location = new System.Drawing.Point(235, 39);
+            this.lbScoreDraw.Name = "lbScoreDraw";
+            this.lbScoreDraw.Size = new System.Drawing.Size(33, 23);
+            this.lbScoreDraw.TabIndex = 21;
+            this.lbScoreDraw.Text = "0";
+            // 
+            // lbMaches
+            // 
+            this.lbMaches.Location = new System.Drawing.Point(202, 14);
+            this.lbMaches.Name = "lbMaches";
+            this.lbMaches.Size = new System.Drawing.Size(60, 16);
+            this.lbMaches.TabIndex = 22;
+            this.lbMaches.Text = "0 Matches";
+            // 
+            // gbScore
+            // 
+            this.gbScore.Controls.Add(this.pictureBox3);
+            this.gbScore.Controls.Add(this.pictureBox2);
+            this.gbScore.Controls.Add(this.pictureBox1);
+            this.gbScore.Controls.Add(this.lbMaches);
+            this.gbScore.Controls.Add(this.lbScoreCross);
+            this.gbScore.Controls.Add(this.lbScoreDraw);
+            this.gbScore.Controls.Add(this.label5);
+            this.gbScore.Controls.Add(this.lbScoreBall);
+            this.gbScore.Location = new System.Drawing.Point(6, 267);
+            this.gbScore.Name = "gbScore";
+            this.gbScore.Size = new System.Drawing.Size(275, 77);
+            this.gbScore.TabIndex = 23;
+            this.gbScore.TabStop = false;
+            // 
+            // ilBolaXis
+            // 
+            this.ilBolaXis.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ilBolaXis.ImageStream")));
+            this.ilBolaXis.TransparentColor = System.Drawing.Color.Transparent;
+            this.ilBolaXis.Images.SetKeyName(0, "Cross.gif");
+            this.ilBolaXis.Images.SetKeyName(1, "Circle.gif");
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::TicTacToe.Properties.Resources.Draw;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(205, 38);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox3.TabIndex = 25;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::TicTacToe.Properties.Resources.Cross;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(109, 38);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::TicTacToe.Properties.Resources.Circle;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 38);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // picWinner
+            // 
+            this.picWinner.Location = new System.Drawing.Point(0, 0);
+            this.picWinner.Name = "picWinner";
+            this.picWinner.Size = new System.Drawing.Size(287, 261);
+            this.picWinner.TabIndex = 13;
+            this.picWinner.TabStop = false;
+            this.picWinner.Visible = false;
+            this.picWinner.Paint += new System.Windows.Forms.PaintEventHandler(this.picWinner_Paint);
+            // 
+            // pic33
+            // 
+            this.pic33.Location = new System.Drawing.Point(187, 170);
+            this.pic33.Name = "pic33";
+            this.pic33.Size = new System.Drawing.Size(62, 56);
+            this.pic33.TabIndex = 9;
+            this.pic33.TabStop = false;
+            this.pic33.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic32
+            // 
+            this.pic32.Location = new System.Drawing.Point(110, 170);
+            this.pic32.Name = "pic32";
+            this.pic32.Size = new System.Drawing.Size(62, 56);
+            this.pic32.TabIndex = 8;
+            this.pic32.TabStop = false;
+            this.pic32.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic31
+            // 
+            this.pic31.Location = new System.Drawing.Point(34, 170);
+            this.pic31.Name = "pic31";
+            this.pic31.Size = new System.Drawing.Size(62, 56);
+            this.pic31.TabIndex = 7;
+            this.pic31.TabStop = false;
+            this.pic31.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic23
+            // 
+            this.pic23.Location = new System.Drawing.Point(187, 99);
+            this.pic23.Name = "pic23";
+            this.pic23.Size = new System.Drawing.Size(62, 56);
+            this.pic23.TabIndex = 6;
+            this.pic23.TabStop = false;
+            this.pic23.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic22
+            // 
+            this.pic22.Location = new System.Drawing.Point(110, 97);
+            this.pic22.Name = "pic22";
+            this.pic22.Size = new System.Drawing.Size(62, 56);
+            this.pic22.TabIndex = 5;
+            this.pic22.TabStop = false;
+            this.pic22.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic21
+            // 
+            this.pic21.Location = new System.Drawing.Point(34, 98);
+            this.pic21.Name = "pic21";
+            this.pic21.Size = new System.Drawing.Size(62, 56);
+            this.pic21.TabIndex = 4;
+            this.pic21.TabStop = false;
+            this.pic21.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic13
+            // 
+            this.pic13.Location = new System.Drawing.Point(187, 27);
+            this.pic13.Name = "pic13";
+            this.pic13.Size = new System.Drawing.Size(62, 56);
+            this.pic13.TabIndex = 3;
+            this.pic13.TabStop = false;
+            this.pic13.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic12
+            // 
+            this.pic12.Location = new System.Drawing.Point(109, 27);
+            this.pic12.Name = "pic12";
+            this.pic12.Size = new System.Drawing.Size(62, 56);
+            this.pic12.TabIndex = 2;
+            this.pic12.TabStop = false;
+            this.pic12.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // pic11
+            // 
+            this.pic11.Location = new System.Drawing.Point(34, 27);
+            this.pic11.Name = "pic11";
+            this.pic11.Size = new System.Drawing.Size(62, 56);
+            this.pic11.TabIndex = 0;
+            this.pic11.TabStop = false;
+            this.pic11.Click += new System.EventHandler(this.pic1_Click);
+            // 
+            // frmTicTacToe
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(287, 323);
+            this.Controls.Add(this.gbScore);
+            this.Controls.Add(this.stbMessage);
+            this.Controls.Add(this.picWinner);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pic33);
+            this.Controls.Add(this.pic32);
+            this.Controls.Add(this.pic31);
+            this.Controls.Add(this.pic23);
+            this.Controls.Add(this.pic22);
+            this.Controls.Add(this.pic21);
+            this.Controls.Add(this.pic13);
+            this.Controls.Add(this.pic12);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pic11);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
+            this.Menu = this.mainMenu1;
+            this.Name = "frmTicTacToe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Tic Tac Toe";
+            this.Closed += new System.EventHandler(this.frmTicTacToe_Closed);
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmTicTacToe_KeyUp);
+            this.gbScore.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picWinner)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic31)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic11)).EndInit();
+            this.ResumeLayout(false);
 
 		}
 		#endregion
@@ -1088,7 +1127,7 @@ namespace TicTacToe
 			// Refreshes the score (Matches, Ball, Cross, Draws)
 			//_____________________________________________________________________________________________
 
-			lbMaches.Text= wScoreTotalMatches.ToString() + " Maches";
+			lbMaches.Text= wScoreTotalMatches.ToString() + " Matches";
 			lbScoreBall.Text= wScoreBall.ToString();
 			lbScoreCross.Text= wScoreCross.ToString();
 			lbScoreDraw.Text= wScoreDraw.ToString();
@@ -1535,7 +1574,17 @@ namespace TicTacToe
 
 		}
 
-		#endregion
-	}
+        #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 
